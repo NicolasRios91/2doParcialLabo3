@@ -193,5 +193,9 @@ window.addEventListener("load", () => {
     let form = document.getElementById("contGrilla");
     console.log(form);
     form?.style.setProperty("visibility", "visible");
+    let btnCerrar = document.getElementById("btnCerrar");
+    btnCerrar?.addEventListener("click", () => {
+      form?.style.setProperty("visibility", "hidden");
+    });
   });
 });

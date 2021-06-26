@@ -161,5 +161,9 @@ window.addEventListener("load", () => {
         let form = document.getElementById("contGrilla");
         console.log(form);
         form === null || form === void 0 ? void 0 : form.style.setProperty("visibility", "visible");
+        let btnCerrar = document.getElementById("btnCerrar");
+        btnCerrar === null || btnCerrar === void 0 ? void 0 : btnCerrar.addEventListener("click", () => {
+            form === null || form === void 0 ? void 0 : form.style.setProperty("visibility", "hidden");
+        });
     });
 });
