@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vehiculos</title>
+    <link type="text/css" rel="stylesheet" href="./styles.css">
+    <script src="./js/vehiculo.js"> </script>
+    <script src="./js/Auto.js"> </script>
+    <script src="./js/Camioneta.js"> </script>
+    <script src="./js/Main.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+<div>
+    <input type="button" class="btnAlta" value="Alta">
+</div>
+<div>
+    <h2>Filtros</h2>
+</div>
+<div><!--FLEX ROW-->
+    <label for="">Filtrar por:</label>
+    <select name="" class="tipoVehiculo" id="filtroVehiculo" >
+        <option disabled selected value> -- select an option -- </option>
+        <option value="Auto">Auto</option>
+        <option value="Camioneta">Camioneta</option>
+    </select>
+    <label for="">Promedio Precio</label>
+    <input type="text" id="PromedioPrecio" disabled>
+    <input type="button" class="CalcularPromedio" id="CalcularPromedio" value="Calcular Promedio">
+</div>
+<div>
+    <h3>Campos Mostrados, Tildar campos a mostrar</h3>
+</div>
+<div>
+    <input type="checkbox" name="" id="id">
+    <label for="">id</label>
+    <input type="checkbox" name="" id="marca">
+    <label for="">marca</label>
+    <input type="checkbox" name="" id="modelo">
+    <label for="">modelo</label>
+    <input type="checkbox" name="" id="precio">
+    <label for="">precio</label>
+</div>
+<div>
+    <h1>Lista de Vehiculos</h1>
+</div>
+<table>
+    <tr>
+        <td>id</td>
+        <td>marca</td>
+        <td>modelo</td>
+        <td>precio</td>
+        <td>accion</td>
+    </tr>
+    <tbody id="tCuerpo">
+        
+    </tbody>
+</table>
+
+    <div class="contenedoraflex">
+
+        <div class="contenedor" id="contGrilla" style="visibility: hidden;" >
+
+            <h3>Alta Vechiculo</h3>
+            <input class="botonCerrar" type="button" id="btnCerrar" value="x">
+            <label for="Id">ID</label>
+            <input type="text" id="Idehiculo" class="sinError" name="nombre" placeholder="Id" disabled=true>
+            <label for="marcaVehiculo">Marca</label>
+            <input type="text" id="marcaVehiculo" class="sinError" name="nombre">
+            <label for="modeloVehiculo">Modelo</label>
+            <input type="text" id="modeloVehiculo" class="sinError" name="nombre">
+            <label for="precioVehiculo">Precio</label>    
+            <input type="number" id="precioVehiculo" class="sinError" name="nombre" placeholder=>
+            <label for="vehiculos">Tipo</label>
+            <select class="combo" name="tiposVehiculo" id="vehiculos">
+                <option value="Auto">Auto</option>
+                <option value="Camioneta">Camioneta</option>
+            </select>
+            <div id="contTipoCamioneta">
+                <label for="tipo">Tipo Camioneta</label>
+                <select class="combo" name="tipoCamioneta" id="tipoCamioneta">
+                    <option value="4x4">4x4</option>
+                    <option value="otros">Otros</option>
+                </select>
+               
+            </div>
+
+            <div id="contTipoAuto">
+
+                <label for="tipo">Puertas</label>
+
+                <input type="number" max="5" min="2" id="cantidadPuertas" class="sinError" name="puertas">
+                <input class="btnCerrar" type="button" id="btnCerrar" value="Cerrar" >
+                <input class="btnAgregar" type="button" id="btnAgregar" value="Agregar">
+            </div>
+
+      
+</body>
+
+</html>
