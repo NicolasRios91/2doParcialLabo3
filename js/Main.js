@@ -159,6 +159,7 @@ window.addEventListener("load", () => {
     let btnAlta = $("btnAlta");
     btnAlta.addEventListener("click", () => {
         let form = document.getElementById("contGrilla");
+        console.log(form);
         form === null || form === void 0 ? void 0 : form.style.setProperty("visibility", "visible");
     });
 });

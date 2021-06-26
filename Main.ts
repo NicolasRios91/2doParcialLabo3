@@ -191,6 +191,7 @@ window.addEventListener("load", () => {
   let btnAlta = $("btnAlta");
   btnAlta.addEventListener("click", () => {
     let form = document.getElementById("contGrilla");
+    console.log(form);
     form?.style.setProperty("visibility", "visible");
   });
 });
